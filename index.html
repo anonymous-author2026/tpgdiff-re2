@@ -231,12 +231,15 @@
           <div class="column is-full">
             
             <figure class="image">
-              <img src="static/images/特征响应-1.png"
+              <img src="static/images/Semi-compare.png"
                    alt="Overview of the proposed TPGDiff framework"
                    loading="lazy">
             </figure>
             <p class="content has-text-left is-size-6 mt-3">
-               <strong>Figure 1</strong>. Feature response heatmaps across different network layers. 
+               <strong>Figure 1</strong>. 
+              Similarity comparison of teacher and student semantic representations with respect to clean semantic anchors under different degradations. 
+              (a)(c)(e)(g) show the similarity matrices between HQ teacher features and LQ teacher features (T-HQ vs T-LQ) for RainDrop, Rain, Snow, and Shadowed cases, respectively; 
+              (b)(d)(f)(h) show the corresponding similarity matrices between HQ teacher features and LQ student features (T-HQ vs S-LQ).  
             </p>
           </div>
         </div>
@@ -250,15 +253,15 @@
           <div class="column is-full">
             
             <figure class="image">
-              <img src="static/images/图1-修改_01.png"
+              <img src="static/images/Degradation-Time.png"
                    alt="Overview of the proposed TPGDiff framework"
                    loading="lazy">
             </figure>
             <p class="content has-text-left is-size-6 mt-3">
               <strong>Figure 2</strong>. 
-             (a) Existing methods inject prior information uniformly into the diffusion model, whereas our approach adopts a hierarchical strategy, distributing distinct priors across specific layers of the network. 
-             (b) The generation results of diffusion models are largely governed by representations encoded in the deep layers of the network, which play a dominant role in determining the final reconstruction.
-             (c) Comparison of results from different restoration methods.
+              Analysis of the temporal conditions of the degenerate prior on the diffusion trajectory. 
+              Where, 'Alignment' reflects the consistency between the degenerate prior and the denoising conditions at the current time step, 
+              while 'Influence' reflects the relative strength of the degenerate prior’s influence compared to the temporal embedding.
             </p>
           </div>
         </div>
@@ -272,12 +275,14 @@
           <div class="column is-full">
             
             <figure class="image">
-              <img src="static/images/消融图_01.png"
+              <img src="static/images/Structure-Err.png"
                    alt="Overview of the proposed TPGDiff framework"
                    loading="lazy">
             </figure>
             <p class="content has-text-left is-size-6 mt-3">
-               <strong>Figure 3</strong>. Visual ablation study on prior components. Each prior plays a distinct and indispensable role, where their synergy ensures both geometric integrity and semantic consistency.
+               <strong>Figure 3</strong>. 
+              Ablation analysis of structural priors. Different structural priors provide complementary rather than redundant geometric constraints.
+              As shown by the restored patches and pixel-wise error maps, removing different priors leads to different types of structural errors.
             </p>
           </div>
         </div>
